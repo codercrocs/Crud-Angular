@@ -1,0 +1,12 @@
+.form-control {
+  max-width: 200px;
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header {
+  border-bottom: 2px solid #d8d8d8;
+}

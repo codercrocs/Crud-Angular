@@ -1,0 +1,28 @@
+.container {
+  border: 2px solid #d8d8d8;
+  /* max-width: 250px; */
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h5 {
+  border-bottom: 2px solid #d8d8d8;
+
+  text-align: center;
+}

@@ -1,0 +1,69 @@
+<div class="container">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="input-container">
+    <div class="input-container">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="name"
+          required
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="genre"
+          required
+          placeholder="genre"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="creator"
+          required
+          placeholder="creator"
+        />
+      </div>
+    </div>
+    <div class="check-container radio-button">
+      <div type="form-check">
+        <input
+          class="form-check-input"
+          required
+          id="book"
+          value="book"
+          formControlName="list"
+          type="radio"
+        />
+        <label for="book" class="form-check-label">Book</label>
+      </div>
+
+      <div type="form-check">
+        <input
+          class="form-check-input"
+          required
+          id="song"
+          value="song"
+          formControlName="list"
+          type="radio"
+        />
+        <label for="song" class="form-check-label">Song</label>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="btn btn-primary">ADD</button>
+    </div>
+  </form>
+
+  <div>
+    <app-book-table></app-book-table>
+  </div>
+  <div>
+    <app-song-table></app-song-table>
+  </div>
+</div>

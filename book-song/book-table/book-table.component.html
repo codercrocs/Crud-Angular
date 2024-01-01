@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>BookList</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>GENRE</th>
+        <th>CREATOR</th>
+        <th>ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of booklists">
+        <td>{{ item.name }}</td>
+        <td>{{ item.genre }}</td>
+        <td>{{ item.creator }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="onDelete(item)">
+            DELETE
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
